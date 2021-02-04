@@ -1,0 +1,11 @@
+def info(**kwargs):
+    return ' '.join(kwargs.values())
+
+
+print(info(
+    surname=input("Введите свою фамилию: "),
+    name=input("Введите своё имя: "),
+    date=input("Введите свою дату рождения: "),
+    city=input("Введите свой город: "),
+    email=input("Введите свою электронную почту: "),
+    phone=input("Введите свой номер телефона: ")))
