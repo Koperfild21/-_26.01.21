@@ -1,0 +1,18 @@
+def fist_func():
+    Result = 0
+    while True:
+        print(f"В данный момент сумма = {Result}")
+        numbers = input("Введите числа разделяя их пробелом, для завершения работы нажмите Q: ").split()
+        for value in numbers:
+            if value == "Q":
+                return Result
+            else:
+                try:
+                    Result += float(value)
+                except ValueError:
+                    print(f"Для выхода из программы нажмите 'Q'.")
+        print(f"Сумма равна = {Result}")
+
+
+
+print(fist_func())

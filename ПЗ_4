@@ -1,0 +1,8 @@
+def numbers(z,e):
+    try:
+        res = z ** e
+    except TypeError:
+        return "Введите действительное число и отрицательное число"
+    return res
+
+print(numbers(123.4, -5))
